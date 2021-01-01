@@ -1,0 +1,100 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package employeerules;
+
+/**
+ *
+ * @author Armand  Nziza (217035019)
+ */
+//superclass
+public class Employee 
+{
+   private String name;
+ 
+   
+    //Default<<constructor>>
+  public Employee()
+  {
+      System.out.println("Employee  object now created");
+  }
+  //constructor with parameters
+   public Employee(String name )
+    {
+      this.name = name;
+      
+    }
+    
+    @Override
+     public String toString()
+  {
+     
+
+     String str = ("Name: " + this.name);
+      return str; 
+     
+  }
+    
+    
+
+    public void setName() {
+        
+        
+        String empName = "";
+        this.name = empName;
+    }
+     
+  
+
+    public String getName() {
+        return name;
+    }
+    
+    //getters
+
+    public double getSalary() {
+        
+        double salary;
+        salary = 5000 * 12;
+        
+        return salary;
+    }
+
+    public double getHours() {
+        
+        double hours;
+        int numOfWeeks = 4;
+        hours = 37.5 * numOfWeeks;
+       
+        return hours;
+    }
+
+    public int getLeaveDays() {
+        
+        int leaveDays;
+        leaveDays = 15 * 12;
+        
+        return leaveDays;
+    }
+   
+    
+    public void leaveApplication()
+  {
+      System.out.println("Apply online for leave "); 
+     
+  }
+    public void work()
+  {
+      System.out.println("Employees know what to do at work");  
+      
+  
+  }
+    
+    
+    
+    
+    
+}
+//end of employee

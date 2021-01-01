@@ -1,0 +1,69 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+package employeerules;
+
+/**
+ *
+ * @author 217035019  (Armand Nziza)
+ */
+public class EmployeeRules {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args)  
+    {
+        // TODO code application logic here
+    
+    Employee [] employees = new Employee[20];
+       
+    employees [0] = new Employee("Damone");
+    employees [1] = new Employee("Zoe");
+    employees [2] = new Employee("Amy");
+    employees [3] = new Employee("May");
+    employees [4] = new Employee("Nick");
+    employees [5] = new Employee("Lara");
+    employees [6] = new Employee("Stacy");
+          
+    employees [7] = new Manager("Jon");
+    employees [8] = new Manager("Brie");
+    employees [9] = new Manager ("Zia");
+    employees [10] = new Manager ("Zanie");
+    employees [11] = new Manager("Mano");
+    employees [12] = new Manager("Roman");
+          
+    employees [13] = new Secretary ("Lutho");
+    employees [14] = new Secretary("Sam");
+    employees [15] = new Secretary ("Edward");
+    employees [16] = new Secretary ("Fagan");
+    employees [17] = new Secretary("Carren");
+    employees [18] = new Secretary("Chloe");
+    employees [19] = new Secretary("Vanni");
+     
+  
+for (Employee employee: employees){
+   
+   System.out.println(employee);
+}
+
+        System.out.println("------------------------------------");
+
+int empCostLeave = employees[1].getLeaveDays() / 7;
+System.out.println("Cost leave for each employee : " + empCostLeave);
+
+int manCostLeave = employees[8].getLeaveDays() / 6;
+System.out.println("Cost leave for each manager : " + manCostLeave);
+
+// average salary of all employees
+double total = employees[0].getSalary() + employees[12].getSalary()/13;
+System.out.println("Average salary: R" + total);
+
+
+        }
+ 
+    }
+    
+
